@@ -1,0 +1,53 @@
+.expertise-bg {
+  color: #f4f7ff;
+  font-weight: bold;
+  font-size: 96px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:0;
+  display: block;
+  text-align: center;
+  z-index: -1;
+}
+
+#expertise {
+    overflow: auto;
+    position: relative;
+    padding: 70px 0;
+  .expertise-header {
+    text-align: center;
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+      font-family: "DM Mono", monospace;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+    .line {
+      border: 3px solid #003edd;
+      width: 7.9%;
+      margin: auto;
+    }
+  }
+
+  .tech-list {
+    margin-top: 73px;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+      justify-items: center;
+      list-style-type: circle;
+      list-style-position: inside;
+      li {
+        color: #0d053f;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+  }
+}

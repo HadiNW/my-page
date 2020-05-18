@@ -1,0 +1,25 @@
+header {
+    // overflow: auto;
+}
+.main-nav {
+    padding: 70px 0;
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            a {
+                padding: 40px;
+                font-weight: bold;
+            }
+
+            &:nth-child(3) {
+                a {
+                    padding-right: 60px;
+                }
+            }
+        }
+    }
+}

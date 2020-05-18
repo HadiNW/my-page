@@ -1,0 +1,116 @@
+#projects {
+    margin: 160px 0 185px 0;
+  .projects-header {
+    text-align: center;
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+      font-family: "DM Mono", monospace;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+    .line {
+      border: 3px solid #003edd;
+      width: 7.9%;
+      margin: auto;
+    }
+  }
+
+  .project-items {
+    display: flex;
+    flex-direction: column;
+    .project-wrapper-left {
+        position: relative;
+        margin-top: 101px;
+        margin-bottom: 100px;
+        .square {
+            background-color: #F4F7FF;
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            .project-text {
+              max-width: 608px;
+              flex-basis: 50%;
+              margin-left: 90px;
+              h2 {
+                font-weight: bold;
+                font-size: 48px;
+              }
+            }
+            .project-img {
+              flex-basis: 50%;
+              justify-self: flex-end;
+              text-align: right;
+              min-width: 418px;
+              min-height: 490px;
+      
+              img {
+                width: 418px;
+                height: 490px;
+                position: absolute;
+                right: 0%;
+                bottom: 15%;
+              }
+            }
+          }
+    }
+    .project-wrapper-right {
+        position: relative;
+        margin-top: 101px;
+        margin-bottom: 100px;
+        .square {
+            background-color: #F4F7FF;
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            .project-text {
+              max-width: 608px;
+              flex-basis: 50%;
+              margin-left: 90px;
+              h2 {
+                font-weight: bold;
+                font-size: 48px;
+              }
+            }
+            .project-img {
+              flex-basis: 50%;
+              justify-self: flex-end;
+              text-align: right;
+              min-width: 418px;
+              min-height: 490px;
+      
+              img {
+                width: 418px;
+                height: 490px;
+                position: absolute;
+                left: 0%;
+                bottom: 15%;
+              }
+            }
+          }
+    }
+  }
+
+  .loadmore {
+      margin: auto;
+      display: block;
+  }
+}

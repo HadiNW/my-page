@@ -1,0 +1,43 @@
+#contact {
+    position: relative;
+    background-color: #F4F7FF;
+    padding: 50px 0;
+
+    .lead {
+        font-family: "DM Mono", monospace;
+        color: #003edd;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .line {
+        width: 7.9%;
+        border: 3px solid #003EDD;
+    }
+    .links {
+        margin-top: 109px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .links-right {
+            display: flex;
+            flex-basis: 50%;
+            justify-content: space-between;
+        }
+    }
+
+    .scroll-button {
+        position: absolute;
+        bottom: 5%;
+        // left:100%;
+        // right: 0;
+        // left: 0;
+        // right: 0;
+        // margin: auto;
+    }
+}
