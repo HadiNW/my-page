@@ -1,21 +1,23 @@
-import React from "react";
+import React from 'react'
 
-import Container from "../container/container.component";
+import Container from '../container/container.component'
 
-import "./hero.styles.scss";
-import Button from "../buttons/button.component";
-import ScrollButton from "../buttons/scroll-button.component";
-import Header from "../header/header.component";
+import './hero.styles.scss'
+import Button from '../buttons/button.component'
+import ScrollButton from '../buttons/scroll-button.component'
+import Header from '../header/header.component'
 
 const Hero = () => (
   <React.Fragment>
-    <div className="bg-main">
-      <div className="circle-right"></div>
-      <div className="circle-left"></div>
-      <h1 className="title-a">FULLSTACK</h1>
-      <h1 className="title-b">DEVELOPER</h1>
-    </div>
     <div className="hero">
+      <div className="shapes">
+        <div className="circle-right"/>
+        <div className="circle-left"/>
+        <div className="titles">
+			 <h1>fullstack</h1>
+			 <h1>developer</h1>
+		</div>
+      </div>
       <Header />
       <Container>
         <div className="hero-content">
@@ -35,12 +37,15 @@ const Hero = () => (
             continuous learning is almost the only way to successfully evolve
             and grow.
           </p>
-          <Button className="btn-primary btn-contact" title="Fell free to reach me" />
+          <Button
+            className="btn-primary btn-contact"
+            title="Fell free to reach me"
+          />
         </div>
         <ScrollButton className="scroll-button" />
       </Container>
     </div>
   </React.Fragment>
-);
+)
 
-export default Hero;
+export default Hero

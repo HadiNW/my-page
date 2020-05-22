@@ -1,88 +1,139 @@
-.bg-main {
-  overflow: hidden;
-  .circle-left {
-    position: absolute;
-    width: 243px;
-    height: 243px;
-    background-color: #f4f7ff;
-    border-radius: 50%;
-    left: -70px;
-    top: -280px;
-  }
+// .shapes {
+//   background-color: red;
+//   overflow: hidden;
+//   .circle-left {
+//     width: 243px;
+//     height: 243px;
+//     background-color: #f4f7ff;
+//     border-radius: 50%;
+//   }
 
-  .circle-right {
-    position: absolute;
-    width: 103px;
-    height: 103px;
-    right: -40px;
-    top: 110px;
-    background-color: #f4f7ff;
-    // border-radius: 50%;
-  }
-  position: absolute;
-  top: 160px;
-  // left: -16px;
-  color: #f4f7ff;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: -1;
-  .title {
-    &-a {
-      font-weight: bold;
-      font-size: 160px;
-      align-self: flex-start;
-      margin-left: -16px;
-    }
-    &-b {
-      font-weight: bold;
-      font-size: 160px;
-      align-self: flex-end;
-      margin-right: 16px;
-    }
-  }
-}
+//   .circle-right {
+//     position: absolute;
+//     width: 103px;
+//     height: 103px;
+//     right: -40px;
+//     top: 110px;
+//     background-color: #f4f7ff;
+//   }
+//   position: absolute;
+//   top: 160px;
+//   color: #f4f7ff;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   z-index: -1;
+//   .title {
+//     &-right {
+//       font-weight: bold;
+//       font-size: 160px;
+//       align-self: flex-start;
+//       margin-left: -16px;
+//     }
+//     &-left {
+//       font-weight: bold;
+//       font-size: 160px;
+//       align-self: flex-end;
+//       margin-right: 16px;
+//     }
+//   }
+// }
 
 .hero {
-  height: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 
-  .hero-content {
-    max-width: 900px;
-  }
+    .shapes {
 
-  .welcome {
-    font-family: "DM Mono", monospace;
-    color: #003edd;
+        .circle-right,
+        .circle-left,
+        .titles {
+            position: absolute;
+        }
 
-    &-name {
-      margin-top: 24px;
-      color: #0d053f;
-      font-weight: bold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 80px;
+        .circle {
+            &-left {
+                top: -12%;
+                left: -3%;
+                width: 243px;
+                height: 243px;
+                background-color: #f4f7ff;
+                border-radius: 50%;
+            }
+
+            &-right {
+                top: 32%;
+                right: -3%;
+                transform: translateY(-50%);
+                width: 120px;
+                height: 120px;
+                background-color: #f4f7ff;
+                border-radius: 50%;
+            }
+        }
+
+        .titles {
+            top: 39%;
+            left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			z-index: -1;
+
+            h1 {
+				text-transform: uppercase;
+				font-size: 155px;
+				flex-basis: 100%;
+				color: #f4f7ff;
+				&:last-child {
+					text-align: right;
+					letter-spacing: .100em;
+					margin-top: .100em;
+				}
+            }
+        }
     }
 
-    &-description {
-      margin-top: 56px;
+    .hero-content {
+        max-width: 900px;
     }
-  }
-  .line {
-    border: 3px solid #003edd;
-    width: 11.3%;
-    margin-top: 22px;
-  }
 
-  .btn-primary {
-    &.btn-contact {
-      margin-top: 56px;
+    .welcome {
+        font-family: "DM Mono", monospace;
+        color: #003edd;
+
+        &-name {
+            margin-top: 24px;
+            color: #0d053f;
+            font-weight: bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 80px;
+        }
+
+        &-description {
+            margin-top: 56px;
+        }
     }
-   
-  }
 
-  .scroll-button {
-    position: absolute;
-    top: 85%;
-    right: 120px;
-  }
+    .line {
+        border: 3px solid #003edd;
+        width: 11.3%;
+        margin-top: 22px;
+    }
+
+    .btn-primary {
+        &.btn-contact {
+            margin-top: 56px;
+        }
+
+    }
+
+    .scroll-button {
+        position: absolute;
+        top: 75%;
+		right: 120px;
+    }
 }

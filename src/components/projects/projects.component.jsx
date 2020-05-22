@@ -1,28 +1,29 @@
-import React from "react";
+import React from 'react'
 
-import sony from "../../assets/img/sony.svg";
-import img2 from "../../assets/img/img2.svg";
-import img3 from "../../assets/img/img3.svg";
+import sony from '../../assets/img/sony.svg'
+import img2 from '../../assets/img/img2.svg'
+import img3 from '../../assets/img/img3.svg'
 
-import "./projects.styles.scss";
-import Container from "../container/container.component";
-import Button from "../buttons/button.component";
+import './projects.styles.scss'
+import Container from '../container/container.component'
+import Button from '../buttons/button.component'
 
 const Projects = () => (
   <section id="projects">
     <Container>
-      <header className="projects-header">
-        <div className="title">Some of works</div>
-        <p>Here are some of my projects</p>
+      <div className="title">
+        <h3>Works</h3>
+        <h4>Area of expertise</h4>
+        <p>Here are a few technologies I've been working with recently:</p>
         <hr className="line" />
-      </header>
+      </div>
     </Container>
-    <div className="project-items">
-      <div className="project-wrapper-left">
-        <div className="square"></div>
+    <div className="projects">
+      <div className="project">
+        <div className="square"/>
         <Container>
-          <div className="project-item">
-            <div className="project-text">
+          <div className="work">
+            <div className="texts">
               <h2>Aplikasi musik ke headset sony</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -30,36 +31,35 @@ const Projects = () => (
                 distinctio illum libero aspernatur rerum?
               </p>
             </div>
-            <div className="project-img">
+            <div className="media">
               <img src={sony} alt="img" />
             </div>
           </div>
         </Container>
       </div>
-      <div className="project-wrapper-right">
-        <div className="square"></div>
+      <div className="project">
+        <div className="square"/>
         <Container>
-          <div className="project-item">
-            <div className="project-img">
-              <img src={img2} alt="img" />
-            </div>
-            <div className="project-text">
+          <div className="work">
+            <div className="texts">
               <h2>Aplikasi musik ke headset sony</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Quidem, nesciunt eligendi mollitia similique tenetur voluptatum
                 distinctio illum libero aspernatur rerum?
               </p>
+            </div>
+            <div className="media">
+              <img src={img2} alt="img" />
             </div>
           </div>
         </Container>
       </div>
-
-      <div className="project-wrapper-left">
-        <div className="square"></div>
+      <div className="project">
+        <div className="square"/>
         <Container>
-          <div className="project-item">
-            <div className="project-text">
+          <div className="work">
+            <div className="texts">
               <h2>Aplikasi musik ke headset sony</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -67,16 +67,15 @@ const Projects = () => (
                 distinctio illum libero aspernatur rerum?
               </p>
             </div>
-            <div className="project-img">
+            <div className="media">
               <img src={img3} alt="img" />
             </div>
           </div>
         </Container>
       </div>
-
     </div>
     <Button className="btn-primary loadmore" title="Load More" />
   </section>
-);
+)
 
-export default Projects;
+export default Projects

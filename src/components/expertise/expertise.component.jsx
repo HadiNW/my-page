@@ -1,20 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import "./expertise.styles.scss";
-import Container from "../container/container.component";
+import './expertise.styles.scss'
+import Container from '../container/container.component'
 
 const Expertise = () => (
   <section id="expertise">
-      <div className="expertise-bg">
-          <h3>STACK</h3>
-      </div>
     <Container>
-      <header className="expertise-header">
-        <h4 className="title">Area of expertise</h4>
+      <div className="title">
+        <h3>STACK</h3>
+        <h4>Area of expertise</h4>
         <p>Here are a few technologies I've been working with recently:</p>
         <hr className="line" />
-      </header>
-      <div className="tech-list">
+      </div>
+      <div className="techs">
         <ul>
           <li>Javascript</li>
           <li>React</li>
@@ -29,6 +27,6 @@ const Expertise = () => (
       </div>
     </Container>
   </section>
-);
+)
 
-export default Expertise;
+export default Expertise

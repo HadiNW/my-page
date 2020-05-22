@@ -1,14 +1,43 @@
 .scroll-button {
-    display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
     background: #003EDD;
     color: #fff;
     border-radius: 50%;
     width: 60px;
-    height: 60px;
-    text-align: center;
+	height: 60px;
+	transition: all .5s ease;
+	&:hover {
+		background-color: rgba(#003EDD, .8);
+		transform: scale(1.05);
+		i {
+			animation: wiggle-down 1s ease-out infinite;
+		}
+	}
+	&:active {
+		transform: scale(.98);
+	}
 
     i {
-        padding: 18px;
-        align-self: center;
+		font-size: 1.200em;
     }
 }
+
+@keyframes wiggle-down {
+	0% {
+		transform: translateY(-10%);
+	}
+	20% {
+		transform: translateY(20%);
+	}
+	50% {
+		transform: translateY(-5%);
+	}
+	80% {
+		transform: translateY(10%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+  }
